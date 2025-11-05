@@ -2,7 +2,7 @@ pub fn abbreviate(phrase: &str) -> String {
     let mut acronym = String::new();
 
     // Replace separators
-    let mut cleaned = phrase.replace('-', " ").replace('_', " ");
+    let cleaned = phrase.replace('-', " ").replace('_', " ");
 
     // Insert a space before uppercase letters that follow lowercase ones (camel case)
     let mut adjusted = String::new();
